@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InventoryTable should match the snapshot 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
+    id="tableBorder"
+  >
+    <div>
+      Loading...
+    </div>
+  </div>
+</div>
+`;

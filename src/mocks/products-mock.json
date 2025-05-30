@@ -1,0 +1,20 @@
+[
+    {
+        "description": "Descrr",
+        "title": "HP 41",
+        "id": 1,
+        "image": "https://res.cloudinary.com/dwmtkp1d1/image/upload/v1685344548/Marketplace/product_1_picture_59cb8fb2-6468-47b6-b879-e9ae0fd7aea1.jpg",
+        "price": 321,
+        "count": 12,
+        "category": "Laptop"
+    },
+    {
+        "description": "Descrr",
+        "title": "Acer 21",
+        "id": 2,
+        "image": "https://res.cloudinary.com/dwmtkp1d1/image/upload/v1685344570/Marketplace/product_2_picture_9dd5a560-0af3-4d8c-9e6c-e3d95383fe4f.jpg",
+        "price": 345,
+        "count": 10,
+        "category": "Laptop"
+    }
+]

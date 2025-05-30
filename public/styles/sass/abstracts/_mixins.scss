@@ -1,0 +1,63 @@
+@mixin responsive-mobile {
+    #hamburger {
+        display: block;
+    }
+
+    aside {
+        position: fixed;
+        left: -100%;
+    }
+}
+
+@mixin responsive-desktop {
+
+    #hamburger,
+    #closeMenu {
+        display: none;
+    }
+
+    aside {
+        left: -100%;
+        position: static;
+    }
+}
+
+@mixin flex-align($direction, $align) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+//General button styling
+
+@mixin button($backgroundColor) {
+    cursor: pointer;
+    margin-top: 20px;
+    color: $general-white;
+    width: 120px;
+    height: 40px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    background: $backgroundColor;
+}
+
+//Material UI styling
+
+@mixin material-ui {
+    .MuiInputBase-root {
+        &::after {
+            border-bottom: $general-black;
+        }
+
+        &::before {
+            border-bottom: 1px solid $general-gray;
+        }
+    }
+
+    label {
+        color: $general-gray;
+    }
+}

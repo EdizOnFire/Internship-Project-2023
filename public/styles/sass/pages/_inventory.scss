@@ -1,0 +1,120 @@
+//Inventory page
+
+// Search and add product spot
+
+#searchSpace {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+    //Search
+
+    .searchProduct {
+        @include flex-align(row, flex-end);
+
+        .MuiInputBase-root {
+            width: 180px;
+        }
+
+        @include material-ui;
+
+        svg {
+            margin: 4px;
+        }
+    }
+
+    // Add product button
+
+    #addButton {
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+        height: 36px;
+        color: $general-white;
+        background: $add-button;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+
+        #addButtonSpace {
+            @include flex-align(row, center);
+            justify-content: center;
+
+            svg {
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+//Table
+
+#tableBorder {
+    border: 1px solid $border-gray;
+    border-radius: 4px;
+    margin-top: 40px;
+    width: 99%;
+    height: 81.2%;
+
+    .MuiDataGrid-cell:focus {
+        color: $general-gray
+    }
+
+    .MuiDataGrid-columnHeaderTitle {
+        font-weight: 800;
+    }
+
+    .MuiDataGrid-columnSeparator {
+        display: none;
+    }
+
+    .edit,
+    .delete {
+        cursor: pointer;
+
+        svg {
+            font-size: medium;
+        }
+    }
+
+    .edit {
+        color: $upload-image;
+    }
+
+    .delete {
+        margin-left: 10px;
+        color: $delete-image;
+    }
+}
+
+.MuiDataGrid-filterForm {
+    @include material-ui;
+
+    label.Mui-focused {
+        color: $general-gray;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #searchSpace {
+        justify-content: space-around;
+        margin-right: 12px;
+    }
+
+    #tableBorder {
+        margin: 0 10px;
+        margin-top: 10px;
+        width: auto;
+        height: auto;
+
+        .MuiDataGrid-root {
+            width: 700px;
+        }
+    }
+
+    .MuiDataGrid-filterForm {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

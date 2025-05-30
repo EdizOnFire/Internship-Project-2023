@@ -1,0 +1,57 @@
+.popup {
+    @include flex-align(column, center);
+    color: $general-black;
+    width: 280px;
+    height: 80px;
+    padding: 14px;
+    background-color: $general-white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    z-index: 99;
+    margin: 4px;
+
+    .arrow {
+        position: absolute;
+
+        &::before {
+            background-color: white;
+            content: '';
+            display: block;
+            width: 14px;
+            height: 14px;
+            transform: rotate(45deg);
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+        margin-top: 16px;
+
+        button {
+            cursor: pointer;
+            height: 22px;
+            width: 56px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            border: 1px solid $main-color;
+        }
+
+        .yes {
+            margin-right: 10px;
+        }
+
+        .no,
+        .yes:active {
+            background-color: $general-white;
+            color: $main-color;
+        }
+
+        .yes,
+        .no:active {
+            background-color: $main-color;
+            color: $general-white;
+        }
+    }
+}
